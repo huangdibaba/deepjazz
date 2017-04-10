@@ -1,0 +1,17 @@
+Problem in transplantation:
+After try to transplant this project to my pc.
+I find that the code of this project have to run on python 2 but not python 3.5 for some packages in python 3.5 is not suit some "import".
+
+Examples:
+1."izip_lonest" vs "zip_longest"
+If you run the file generator.py on python 3.5 directly,
+you will not miss the error caused by code "from itertools import groupby, izip_longest".
+Beacuse in python 3.5, izip_longest is no longer exist,you can replaced it to zip_longest to solve this problem.
+2."xrange" vs "range"
+And another possible bug is in the places where "xrange" exists.
+Maybe in python 2,you can use "xrange" other than "range" for less mem use.
+But in python 3, "xrange" is no longer exists either.
+You just simply use "range" to code your file in the places you want to use "xrange".
+
+Tip:
+So,there is a tip if you want to duplicate deepjazz,it is better for you to run it on python2.:)
